@@ -1,0 +1,5 @@
+# import files
+.import/
+
+# psd backup
+**.psd~
