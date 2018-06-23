@@ -1,6 +1,0 @@
-#ifndef KARMA_GAMEOBJECT_HPP
-#define KARMA_GAMEOBJECT_HPP
-class GameObject {
-
-};
-#endif // KARMA_GAMEOBJECT_HPP
