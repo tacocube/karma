@@ -1,12 +1,7 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://tilesets/tileset1/tileset1.tres" type="TileSet" id=1]
-[ext_resource path="res://scenes/Main/MainCam.gd" type="Script" id=2]
-[ext_resource path="res://characters/Sasa/Sasa.tscn" type="PackedScene" id=3]
-
-
-
-
+[ext_resource path="res://characters/Sasa/Sasa.tscn" type="PackedScene" id=2]
 
 [node name="Node2D" type="Node2D" index="0"]
 
@@ -30,14 +25,18 @@ collision_layer = 1
 collision_mask = 1
 occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray( -262141, 0, 0, -262140, 0, 0, -196601, 0, 0, -196600, 0, 0, -65536, 0, 0, -65535, 0, 0, -65534, 0, 0, -65533, 0, 0, -65532, 0, 0, -65531, 0, 0 )
+tile_data = PoolIntArray( -524287, 0, 0, -524285, 1, 0, -524283, 1, 0, -524281, 2, 0, -393215, 3, 0, -393213, 4, 0, -393211, 4, 0, -393209, 5, 0, -262145, 0, 0, -327679, 1, 0, -327677, 1, 0, -327675, 1, 0, -327673, 1, 0, -327671, 2, 0, -131073, 3, 0, -196607, 4, 0, -196605, 4, 0, -196603, 4, 0, -196601, 4, 0, -196599, 5, 0 )
 
-[node name="MainCam" type="Camera2D" parent="." index="1"]
+[node name="Sasa" parent="." index="1" instance=ExtResource( 2 )]
 
-position = Vector2( 90, -148 )
+position = Vector2( 82, -650 )
+
+[node name="MainCam" type="Camera2D" parent="." index="2"]
+
+position = Vector2( 332, -329 )
 anchor_mode = 1
 rotating = false
-current = false
+current = true
 zoom = Vector2( 1, 1 )
 limit_left = -10000000
 limit_top = -10000000
@@ -50,17 +49,13 @@ smoothing_enabled = false
 smoothing_speed = 5.0
 offset_v = 0.0
 offset_h = 0.0
-drag_margin_left = 0.2
-drag_margin_top = 0.2
-drag_margin_right = 0.2
-drag_margin_bottom = 0.2
+drag_margin_left = 0.0
+drag_margin_top = 0.0
+drag_margin_right = 0.0
+drag_margin_bottom = 0.0
 editor_draw_screen = true
 editor_draw_limits = false
 editor_draw_drag_margin = false
-script = ExtResource( 2 )
-
-[node name="Sasa" parent="." index="2" instance=ExtResource( 3 )]
-
-position = Vector2( 132, -311 )
+_sections_unfolded = [ "Drag Margin", "Limit", "Transform" ]
 
 
