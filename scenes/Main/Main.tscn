@@ -3,7 +3,7 @@
 [ext_resource path="res://tilesets/tileset1/tileset1.tres" type="TileSet" id=1]
 [ext_resource path="res://characters/Sasa/Sasa.tscn" type="PackedScene" id=2]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Node2D" index="0"]
 
 position = Vector2( -20, 10 )
 
@@ -27,11 +27,7 @@ occluder_light_mask = 1
 format = 1
 tile_data = PoolIntArray( -524287, 0, 0, -524285, 1, 0, -524283, 1, 0, -524281, 2, 0, -393215, 3, 0, -393213, 4, 0, -393211, 4, 0, -393209, 5, 0, -262145, 0, 0, -327679, 1, 0, -327677, 1, 0, -327675, 1, 0, -327673, 1, 0, -327671, 2, 0, -131073, 3, 0, -196607, 4, 0, -196605, 4, 0, -196603, 4, 0, -196601, 4, 0, -196599, 5, 0 )
 
-[node name="Sasa" parent="." index="1" instance=ExtResource( 2 )]
-
-position = Vector2( 309.608, -333.459 )
-
-[node name="MainCam" type="Camera2D" parent="." index="2"]
+[node name="MainCam" type="Camera2D" parent="." index="1"]
 
 position = Vector2( 332, -329 )
 anchor_mode = 1
@@ -57,5 +53,9 @@ editor_draw_screen = true
 editor_draw_limits = false
 editor_draw_drag_margin = false
 _sections_unfolded = [ "Drag Margin", "Limit", "Transform" ]
+
+[node name="Sasa" parent="." index="2" instance=ExtResource( 2 )]
+
+position = Vector2( 270, -450 )
 
 
